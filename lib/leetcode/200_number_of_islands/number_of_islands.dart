@@ -22,6 +22,7 @@ class Solution {
         index++;
         for (int r = -1; r <= 1; r++) {
           for (int c = -1; c <= 1; c++) {
+            if (c == 0 && r == 0) continue;
             int r1 = r0 + r;
             int c1 = c0 + c;
             if (r1 >= 0 && 
